@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav class="menu">
+                <h1><a id="a1" onclick="about()">ABOUT</a></h1>
+                <h1><a id="a2" onclick="services()">SERVICES</a></h1>
+                <h1><a id="a3" onclick="projects()">PROJECTS</a></h1>
+                <h1><a id="a4" onclick="contact()">CONTACT</a></h1>
+            </nav>
+
+            <!-- About Section -->
+            <div class="about1" id="about11">
+                <h1 id="about">ABOUT</h1>
+                <img src="images/abhi1.jpg" alt="Abhijit">
+                <p>Hello! I'm Abhijit Mallappa Haragapure, a dedicated Computer Science student currently in my 7th semester, with a CGPA of 7.89. I am passionate about technology and coding, with a strong foundation in multiple programming languages and web development skills.</p>
+                <p>Skills:
+            
+                    Programming Languages: Java, Python
+                    Web Development: HTML, CSS, JavaScript
+                    Problem Solving & Algorithms: Strong focus on optimizing code and tackling complex challenges
+                    Tools & Technologies: Familiar with modern development tools and frameworks.
+                </p>
+            </div>
+
+            <!-- Services Section -->
+            <div class="services1" id="services11">
+                <h1 id="services">SERVICES</h1>
+                <a><img src="images/abhi3.jpg" alt="Services"></a>
+                <p>Web Design & Development
+                
+                    Custom website design
+                    Front-end development (HTML, CSS, JavaScript)
+                    E-commerce integration (Shopify, WooCommerce, etc.)
+                    Website maintenance and updates
+                </p>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="projects1" id="projects11">
+                <h1 id="projects">PROJECTS</h1>
+                <a><img src="images/abhi41.jpg" alt="Java Project"></a>
+                <p>Java - Object-oriented, general-purpose programming language.</p>
+                <a> <img src="images/abhi42.jpg" alt="Python Project"></a>
+                <p>Python - High-level, interpreted, general-purpose language.</p>
+                <a> <img src="images/abhi43.jpg" alt="JavaScript Project"></a>
+                <p>JavaScript - Scripting language, primarily used for web development.</p>
+            </div>
+
+            <!-- Contact Section with Google Form -->
+            <div class="contact1" id="contact11">
+                <a><h1 id="contact">CONTACT</h1>/<a>
+                <img src="images/abhi5.jpg" alt="Contact">
+                <h1><form name="submit-to-google-sheet">
+                    <input id="name" name="Name"type="text" placeholder="Enter your name" required>
+                    <input id="email"name="Email" type="email" placeholder="Enter your email" required>
+                    <input id="number"name="Number" type="number" placeholder="Enter your phone number" required>
+                    <button type="submit">SUBMIT</button>
+                    <P id="pp"></P>
+                </form>
+                </h1>
+                
+                <!-- Embed Google Form -->
+             
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Add your JavaScript here -->
+    <script src="portfolio.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfymmfAqCZFyDqpneEwxYgBM9SN0iO9ADnBUmkw89MhJH_1oFqO31yDKSCVkggAiA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

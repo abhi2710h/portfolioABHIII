@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+h1 :hover{
+cursor: pointer;
+}
+
+p{
+    align-items: center;
+    justify-self:center;
+    color: #f1f0f2;
+    font-size:large ;
+  margin-top: 20px;
+  margin-bottom: 40px;
+    margin-left:1000px ;
+  
+}
+#about{
+    
+    margin-top: 30px ;
+    color:aquamarine;
+    padding: 5px;
+    margin-left: 1150px;
+   
+}
+
+  
+   
+
+body {
+    background-image: url('images/abhi.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover; /* Make sure the body background image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /
+}
+
+
+
+    img{
+    margin-bottom: 20px;
+        margin-left: 1100px;
+        height:300px;
+        width: 250px;
+    }
+    img :hover{
+        cursor: pointer;
+    }
+    #services{
+    
+        margin-top: 30px ;
+        color:aquamarine;
+        padding: 5px;
+        margin-left: 150px;
+    
+    }
+    #services11 img{
+        margin-left: 200px;
+    }
+    #services11 p{
+        margin-left: 50px;
+        margin-right: 800px;
+    }
+    #projects{
+    
+        margin-top: 30px ;
+        color:aquamarine;
+        padding: 5px;
+        margin-left: 1150px;
+    
+    }
+    #contact{
+    
+        margin-top: 30px ;
+        color:aquamarine;
+        padding: 5px;
+        margin-left: 230px;
+    
+    }
+    #contact11 img{
+        margin-left: 200px;
+    }
+    #contact11 p{
+        margin-left: 50px;
+        margin-right: 800px;
+    }
+    
+    input{
+        margin-left:200px ;
+        font-size: large;
+        background-color: hsl(0, 31%, 95%);
+        color: hsla(63, 90%, 4%, 0.949);
+        padding: 10PX;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s, background-color 0.3s;
+    }input:hover {
+        background-color: rgba(9, 9, 9, 0.877);
+        cursor: pointer;
+  
+        transform: translateX(10px);
+     }
+
+    button {
+        margin-left: 200px;
+        border-radius: 50%;
+        font-size: large;
+        background-color: greenyellow;
+        padding: 10px;  
+        transition: transform 0.5s, background-color 0.3s; }
+    
+    button:hover {
+        background-color: blue;
+        cursor: pointer;
+        transform: translateX(10px); }
