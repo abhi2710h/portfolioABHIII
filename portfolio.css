@@ -36,7 +36,7 @@ p{
    
 
 body {
-    background-image: url('images/abhi.jpg');
+    background-image: url('abhi.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover; /* Make sure the body background image covers the entire screen */
